@@ -1,0 +1,86 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 282526239394636,
+					"parameters": {
+						"object": "Coin_temp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Coin_temp",
+					"sid": 497137439027856
+				}
+			],
+			"sid": 213033426492616
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 577929070826240,
+					"parameters": {
+						"interval-seconds": "1.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 766094934215437,
+					"parameters": {
+						"variable": "Timer",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "timerText",
+					"sid": 314116545643282,
+					"parameters": {
+						"text": "Timer"
+					}
+				}
+			],
+			"sid": 974749480762351
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 740890631399005,
+					"parameters": {
+						"variable": "Timer",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 210799948512343,
+					"parameters": {
+						"layout": "Game Over Screen"
+					}
+				}
+			],
+			"sid": 124190787829807
+		}
+	],
+	"sid": 321039018027199
+}

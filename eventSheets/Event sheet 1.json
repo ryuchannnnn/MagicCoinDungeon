@@ -1,5 +1,45 @@
 {
 	"name": "Event sheet 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Timer",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 643423381905747
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 206018061136620
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 908236614231603,
+					"parameters": {
+						"layout": "Play Screen"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "timerText",
+					"sid": 365467126318329,
+					"parameters": {
+						"text": "Timer"
+					}
+				}
+			],
+			"sid": 366122897324511
+		}
+	],
 	"sid": 729546946130499
 }

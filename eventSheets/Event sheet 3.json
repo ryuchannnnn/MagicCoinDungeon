@@ -1,0 +1,27 @@
+{
+	"name": "Event sheet 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button2",
+					"sid": 226723895515502
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 544041801478312,
+					"parameters": {
+						"layout": "Title Screen"
+					}
+				}
+			],
+			"sid": 708065444149626
+		}
+	],
+	"sid": 110297390518580
+}
