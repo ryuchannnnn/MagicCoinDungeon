@@ -43,6 +43,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Pathfinding",
 			"name": "Pathfinding",
 			"author": "Scirra",
@@ -102,9 +109,9 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1",
-			"Event sheet 2",
-			"Event sheet 3"
+			"Title Sheet",
+			"Play Sheet",
+			"Game Over Sheet"
 		],
 		"subfolders": []
 	},

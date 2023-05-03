@@ -1,0 +1,202 @@
+{
+	"name": "Play Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "player",
+					"sid": 282526239394636,
+					"parameters": {
+						"object": "Coin_temp"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Coin_temp",
+					"sid": 497137439027856
+				}
+			],
+			"sid": 213033426492616
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 527337912239928,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 766094934215437,
+					"parameters": {
+						"variable": "Timer",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "timerText",
+					"sid": 314116545643282,
+					"parameters": {
+						"text": "Timer"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 268390549147174,
+					"parameters": {
+						"object-to-create": "Coin_temp",
+						"layer": "0",
+						"x": "random(0,1000)",
+						"y": "random(0,750)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 224609329057980,
+					"parameters": {
+						"object-to-create": "Coin_temp",
+						"layer": "0",
+						"x": "random(0,1000)",
+						"y": "random(0,750)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 514497944972212,
+					"parameters": {
+						"object-to-create": "Coin_temp",
+						"layer": "0",
+						"x": "random(0,1000)",
+						"y": "random(0,750)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 359893788608278,
+					"parameters": {
+						"object-to-create": "Coin_temp",
+						"layer": "0",
+						"x": "random(0,1000)",
+						"y": "random(0,750)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 298702924207284,
+					"parameters": {
+						"object-to-create": "Coin_temp",
+						"layer": "0",
+						"x": "random(0,1000)",
+						"y": "random(0,750)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 974749480762351
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 740890631399005,
+					"parameters": {
+						"variable": "Timer",
+						"comparison": 0,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 210799948512343,
+					"parameters": {
+						"layout": "Game Over Screen"
+					}
+				}
+			],
+			"sid": 124190787829807
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-los-to-object",
+					"objectClass": "Enemy",
+					"sid": 655024190418852,
+					"behaviorType": "LineOfSight",
+					"parameters": {
+						"object": "player",
+						"image-point": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "move-at-angle",
+					"objectClass": "Enemy",
+					"sid": 326218582931068,
+					"parameters": {
+						"angle": "angle(Enemy.X,Enemy.Y,player.X,player.Y)",
+						"distance": "1"
+					}
+				}
+			],
+			"sid": 455601520742477
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy",
+					"sid": 196973842183930,
+					"parameters": {
+						"object": "player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 493473874220422,
+					"parameters": {
+						"layout": "Game Over Screen"
+					}
+				}
+			],
+			"sid": 323070544837340
+		}
+	],
+	"sid": 321039018027199
+}

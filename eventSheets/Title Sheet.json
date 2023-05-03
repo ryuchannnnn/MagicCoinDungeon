@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 1",
+	"name": "Title Sheet",
 	"events": [
 		{
 			"eventType": "variable",
@@ -21,6 +21,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 869839508741561,
+					"parameters": {
+						"variable": "Timer",
+						"value": "10"
+					}
+				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
@@ -44,27 +53,16 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 746574447730826,
-					"parameters": {
-						"interval-seconds": "1.0"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "find-path",
+					"id": "on-collision-with-another-object",
 					"objectClass": "Enemy",
-					"sid": 360258682329143,
-					"behaviorType": "Pathfinding",
+					"sid": 703903322285847,
 					"parameters": {
-						"x": "player.X",
-						"y": "player.Y"
+						"object": "player"
 					}
 				}
 			],
-			"sid": 898987073800995
+			"actions": [],
+			"sid": 909938861082270
 		}
 	],
 	"sid": 729546946130499
