@@ -29,10 +29,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -2,
-						"y": -14,
-						"width": 1712,
-						"height": 975,
+						"x": 2.203433720342872,
+						"y": 1.1323613932341061,
+						"width": 1000,
+						"height": 750,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -1042,7 +1042,28 @@
 					},
 					"uid": 39,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"direct-movement": "to-destination",
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 336,
 						"y": 225,
@@ -1071,7 +1092,28 @@
 					},
 					"uid": 40,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Pathfinding": {
+							"properties": {
+								"cell-size": 30,
+								"cell-border": -1,
+								"obstacles": "solids",
+								"max-speed": 200,
+								"acceleration": 1000,
+								"deceleration": 2000,
+								"rotate-speed": 135,
+								"rotate-object": true,
+								"diagonals": true,
+								"direct-movement": "to-destination",
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 537,
 						"y": 236,
@@ -1252,8 +1294,8 @@
 	"sid": 476358194771570,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 1000,
+	"height": 750,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

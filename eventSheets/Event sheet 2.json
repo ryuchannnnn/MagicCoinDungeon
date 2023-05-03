@@ -77,6 +77,19 @@
 					"parameters": {
 						"layout": "Game Over Screen"
 					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 517219641049693,
+					"parameters": {
+						"object-to-create": "Coin_temp",
+						"layer": "0",
+						"x": "random(0,1000)",
+						"y": "random(0,750)",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
 				}
 			],
 			"sid": 124190787829807
