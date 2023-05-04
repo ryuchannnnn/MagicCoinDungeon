@@ -6,7 +6,7 @@
 			"conditions": [
 				{
 					"id": "on-clicked",
-					"objectClass": "Button2",
+					"objectClass": "backToMenu",
 					"sid": 226723895515502
 				}
 			],
@@ -21,6 +21,27 @@
 				}
 			],
 			"sid": 708065444149626
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "retryButton",
+					"sid": 600968057586144
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 977757292277639,
+					"parameters": {
+						"layout": "Play Screen"
+					}
+				}
+			],
+			"sid": 799589145298350
 		}
 	],
 	"sid": 110297390518580

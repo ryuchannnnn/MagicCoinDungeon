@@ -107,32 +107,6 @@
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 359893788608278,
-					"parameters": {
-						"object-to-create": "Coin_temp",
-						"layer": "0",
-						"x": "random(0,1000)",
-						"y": "random(0,750)",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
-				},
-				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 298702924207284,
-					"parameters": {
-						"object-to-create": "Coin_temp",
-						"layer": "0",
-						"x": "random(0,1000)",
-						"y": "random(0,750)",
-						"create-hierarchy": false,
-						"template-name": "\"\""
-					}
 				}
 			],
 			"sid": 974749480762351
@@ -216,19 +190,13 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
-			"actions": [],
-			"sid": 343844928777978
-		},
-		{
-			"eventType": "block",
 			"conditions": [
 				{
 					"id": "every-x-seconds",
 					"objectClass": "System",
-					"sid": 664451102481364,
+					"sid": 911932316236202,
 					"parameters": {
-						"interval-seconds": "30"
+						"interval-seconds": "5"
 					}
 				}
 			],

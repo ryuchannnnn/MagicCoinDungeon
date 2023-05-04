@@ -123,10 +123,10 @@
 					}
 				},
 				{
-					"type": "Button2",
+					"type": "backToMenu",
 					"properties": {
 						"type": "button",
-						"text": "Back to Start",
+						"text": "Back to Menu",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -143,6 +143,37 @@
 						"y": 113,
 						"width": 97,
 						"height": 42,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "retryButton",
+					"properties": {
+						"type": "button",
+						"text": "Retry",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": "",
+						"class": ""
+					},
+					"uid": 66,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 367,
+						"y": 206,
+						"width": 102,
+						"height": 40,
 						"originX": 0,
 						"originY": 0,
 						"color": [

@@ -88,11 +88,13 @@
 			"Text",
 			"NewGameButton",
 			"Text2",
-			"Button2",
+			"backToMenu",
 			"timerText",
 			"Text3",
 			"ScoreText",
-			"RulesButton"
+			"RulesButton",
+			"highScoreText",
+			"retryButton"
 		],
 		"subfolders": []
 	},

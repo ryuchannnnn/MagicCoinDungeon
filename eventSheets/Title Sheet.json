@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "Timer",
 			"type": "number",
-			"initialValue": "10",
+			"initialValue": "60",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -24,10 +24,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 869839508741561,
+					"sid": 346491454473949,
 					"parameters": {
 						"variable": "Timer",
-						"value": "10"
+						"value": "60"
 					}
 				},
 				{
@@ -48,21 +48,6 @@
 				}
 			],
 			"sid": 366122897324511
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Enemy",
-					"sid": 703903322285847,
-					"parameters": {
-						"object": "player"
-					}
-				}
-			],
-			"actions": [],
-			"sid": 909938861082270
 		},
 		{
 			"eventType": "block",
