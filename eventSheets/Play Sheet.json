@@ -15,6 +15,23 @@
 			],
 			"actions": [
 				{
+					"id": "add-to-instvar",
+					"objectClass": "player",
+					"sid": 806720469776054,
+					"parameters": {
+						"instance-variable": "Score",
+						"value": "10"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "ScoreText",
+					"sid": 698350783162361,
+					"parameters": {
+						"text": "\"Score = \" & player.Score"
+					}
+				},
+				{
 					"id": "destroy",
 					"objectClass": "Coin_temp",
 					"sid": 497137439027856
@@ -196,6 +213,12 @@
 				}
 			],
 			"sid": 323070544837340
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 343844928777978
 		}
 	],
 	"sid": 321039018027199

@@ -89,7 +89,9 @@
 			"Button",
 			"Text2",
 			"Button2",
-			"timerText"
+			"timerText",
+			"Text3",
+			"ScoreText"
 		],
 		"subfolders": []
 	},
