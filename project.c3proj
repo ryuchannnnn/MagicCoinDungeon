@@ -86,12 +86,13 @@
 			"Tilemap",
 			"TiledBackground",
 			"Text",
-			"Button",
+			"NewGameButton",
 			"Text2",
 			"Button2",
 			"timerText",
 			"Text3",
-			"ScoreText"
+			"ScoreText",
+			"RulesButton"
 		],
 		"subfolders": []
 	},
@@ -104,6 +105,7 @@
 	"layouts": {
 		"items": [
 			"Title Screen",
+			"Rule Screen",
 			"Play Screen",
 			"Game Over Screen"
 		],
@@ -113,7 +115,8 @@
 		"items": [
 			"Title Sheet",
 			"Play Sheet",
-			"Game Over Sheet"
+			"Game Over Sheet",
+			"Rule Sheet"
 		],
 		"subfolders": []
 	},

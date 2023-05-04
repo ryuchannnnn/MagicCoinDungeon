@@ -219,6 +219,35 @@
 			"conditions": [],
 			"actions": [],
 			"sid": 343844928777978
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 664451102481364,
+					"parameters": {
+						"interval-seconds": "30"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 189165396397308,
+					"parameters": {
+						"object-to-create": "Enemy",
+						"layer": "0",
+						"x": "0",
+						"y": "0",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 931378154168879
 		}
 	],
 	"sid": 321039018027199

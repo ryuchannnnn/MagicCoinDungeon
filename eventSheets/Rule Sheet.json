@@ -1,0 +1,27 @@
+{
+	"name": "Rule Sheet",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "RulesButton",
+					"sid": 389567287332529
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 486420455340617,
+					"parameters": {
+						"layout": "Title Screen"
+					}
+				}
+			],
+			"sid": 302537546921572
+		}
+	],
+	"sid": 594115761315201
+}

@@ -16,7 +16,7 @@
 			"conditions": [
 				{
 					"id": "on-clicked",
-					"objectClass": "Button",
+					"objectClass": "NewGameButton",
 					"sid": 206018061136620
 				}
 			],
@@ -63,6 +63,27 @@
 			],
 			"actions": [],
 			"sid": 909938861082270
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "RulesButton",
+					"sid": 949091350303942
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 928692501392546,
+					"parameters": {
+						"layout": "Rule Screen"
+					}
+				}
+			],
+			"sid": 563779719337794
 		}
 	],
 	"sid": 729546946130499
