@@ -204,12 +204,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 189165396397308,
+					"sid": 590089048805805,
 					"parameters": {
 						"object-to-create": "Enemy",
 						"layer": "0",
-						"x": "0",
-						"y": "0",
+						"x": "random(0,1000)",
+						"y": "random(0,700)",
 						"create-hierarchy": false,
 						"template-name": "\"\""
 					}

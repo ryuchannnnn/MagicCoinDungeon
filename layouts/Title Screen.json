@@ -80,7 +80,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Text",
+					"type": "Text1",
 					"properties": {
 						"text": "Magic Coin Dungeon",
 						"enable-bbcode": true,

@@ -33,6 +33,23 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 545723043560293,
+					"parameters": {
+						"variable": "Timer",
+						"value": "60"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "timerText",
+					"sid": 176392611591007,
+					"parameters": {
+						"text": "Timer"
+					}
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 977757292277639,

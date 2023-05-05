@@ -85,7 +85,7 @@
 			"player",
 			"Tilemap",
 			"TiledBackground",
-			"Text",
+			"Text1",
 			"NewGameButton",
 			"Text2",
 			"backToMenu",
